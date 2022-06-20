@@ -1,0 +1,140 @@
+.hidden {
+  display: none !important;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80vw;
+  gap: 10px;
+  height: 80vh;
+  background-color: #303030;
+  border: 1px solid red;
+}
+
+.container .blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  width: 435px;
+}
+
+.container .blocks .block {
+  height: 200px;
+  width: 200px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+.container .blocks .block:active, .container .blocks .block.active {
+  background-color: red;
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+.container .blocks .block.block1 {
+  -webkit-box-shadow: 0px 0px 35px rgba(255, 83, 83, 0.2) inset, 0px 0px 30px rgba(255, 83, 83, 0.2);
+          box-shadow: 0px 0px 35px rgba(255, 83, 83, 0.2) inset, 0px 0px 30px rgba(255, 83, 83, 0.2);
+  background-color: transparent;
+  border: solid 1px #ff6d6d;
+  color: transparent;
+}
+
+.container .blocks .block.block1:hover {
+  background-color: rgba(255, 83, 83, 0.3);
+  -webkit-box-shadow: 0px 0px 35px rgba(255, 83, 83, 0.2);
+          box-shadow: 0px 0px 35px rgba(255, 83, 83, 0.2);
+}
+
+.container .blocks .block.block1:active, .container .blocks .block.block1.active {
+  background-color: #ff5353;
+  -webkit-box-shadow: 0px 0px 35px #ff5353;
+          box-shadow: 0px 0px 35px #ff5353;
+}
+
+.container .blocks .block.block2 {
+  -webkit-box-shadow: 0px 0px 35px rgba(255, 196, 41, 0.2) inset, 0px 0px 30px rgba(255, 196, 41, 0.2);
+          box-shadow: 0px 0px 35px rgba(255, 196, 41, 0.2) inset, 0px 0px 30px rgba(255, 196, 41, 0.2);
+  background-color: transparent;
+  border: solid 1px #ffcb43;
+  color: transparent;
+}
+
+.container .blocks .block.block2:hover {
+  background-color: rgba(255, 196, 41, 0.3);
+  -webkit-box-shadow: 0px 0px 35px rgba(255, 196, 41, 0.2);
+          box-shadow: 0px 0px 35px rgba(255, 196, 41, 0.2);
+}
+
+.container .blocks .block.block2:active, .container .blocks .block.block2.active {
+  background-color: #ffc429;
+  -webkit-box-shadow: 0px 0px 35px #ffc429;
+          box-shadow: 0px 0px 35px #ffc429;
+}
+
+.container .blocks .block.block3 {
+  -webkit-box-shadow: 0px 0px 35px rgba(89, 128, 193, 0.2) inset, 0px 0px 30px rgba(89, 128, 193, 0.2);
+          box-shadow: 0px 0px 35px rgba(89, 128, 193, 0.2) inset, 0px 0px 30px rgba(89, 128, 193, 0.2);
+  background-color: transparent;
+  border: solid 1px #6c8ec8;
+  color: transparent;
+}
+
+.container .blocks .block.block3:hover {
+  background-color: rgba(89, 128, 193, 0.3);
+  -webkit-box-shadow: 0px 0px 35px rgba(89, 128, 193, 0.2);
+          box-shadow: 0px 0px 35px rgba(89, 128, 193, 0.2);
+}
+
+.container .blocks .block.block3:active, .container .blocks .block.block3.active {
+  background-color: #5980c1;
+  -webkit-box-shadow: 0px 0px 35px #5980c1;
+          box-shadow: 0px 0px 35px #5980c1;
+}
+
+.container .blocks .block.block4 {
+  -webkit-box-shadow: 0px 0px 35px rgba(251, 233, 183, 0.2) inset, 0px 0px 30px rgba(251, 233, 183, 0.2);
+          box-shadow: 0px 0px 35px rgba(251, 233, 183, 0.2) inset, 0px 0px 30px rgba(251, 233, 183, 0.2);
+  background-color: transparent;
+  border: solid 1px #fcf0cf;
+  color: transparent;
+}
+
+.container .blocks .block.block4:hover {
+  background-color: rgba(251, 233, 183, 0.3);
+  -webkit-box-shadow: 0px 0px 35px rgba(251, 233, 183, 0.2);
+          box-shadow: 0px 0px 35px rgba(251, 233, 183, 0.2);
+}
+
+.container .blocks .block.block4:active, .container .blocks .block.block4.active {
+  background-color: #fbe9b7;
+  -webkit-box-shadow: 0px 0px 35px #fbe9b7;
+          box-shadow: 0px 0px 35px #fbe9b7;
+}

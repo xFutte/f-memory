@@ -1,0 +1,88 @@
+$background-color: rgb(48, 48, 48);
+
+$colorRed: #ff5353;
+$colorYellow: #ffc429;
+$colorBlue: #5980c1;
+$colorWhite: #fbe9b7;
+
+@mixin setBlockColor($color) {
+	box-shadow: 0px 0px 35px rgba($color, 0.2) inset,
+	0px 0px 30px rgba($color, 0.2);
+	background-color: transparent;
+	border: solid 1px lighten($color, 5);
+	color: transparent;
+
+	&:hover {
+		background-color: rgba($color, 0.3);
+		box-shadow: 0px 0px 35px rgba($color, 0.2);
+	}
+
+	&:active,
+	&.active {
+		background-color: $color;
+		box-shadow: 0px 0px 35px $color;
+		// color: white
+		// transform: scale(0.95)
+	}
+}
+
+// Utility classes
+
+.hidden {
+	display: none !important;
+}
+
+body {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80vw;
+	gap: 10px;
+	height: 80vh;
+	background-color: $background-color;
+	border: 1px solid red;
+
+	.blocks {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		width: 435px;
+
+		.block {
+			height: 200px;
+			width: 200px;
+			cursor: pointer;
+			transition-duration: 0.6s;
+
+			&:active,
+			&.active {
+				background-color: red;
+				transition-duration: 0s; 
+			}
+
+			&.block1 {
+				@include setBlockColor($colorRed);
+			}
+
+			&.block2 {
+				@include setBlockColor($colorYellow);
+			}
+
+			&.block3 {
+				@include setBlockColor($colorBlue);
+			}
+
+			&.block4 {
+				@include setBlockColor($colorWhite);
+			}
+		}
+	}
+}
